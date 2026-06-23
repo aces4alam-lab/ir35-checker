@@ -374,9 +374,15 @@ Overall risk score: ${score}/100 (higher = more likely outside IR35)`;
                   <div style={{ fontSize: 14 }}>Analysing your IR35 status...</div>
                 </div>
               ) : (
-                <div style={{ fontSize: 14, color: COLORS.text, lineHeight: 1.7, whiteSpace: "pre-wrap" }}>
-                  {aiAnalysis}
-                </div>
+                <div style={{ fontSize: 14, color: COLORS.text, lineHeight: 1.7 }}>
+  {aiAnalysis.split('\n').map((line, i) => {
+    if (line.startsWith('## ')) return <h3 key={i} style={{ fontSize: 16, fontWeight: 700, color: COLORS.navy, margin: '16px 0 8px' }}>{line.replace('## ', '')}</h3>;
+    if (line.startsWith('**') && line.endsWith('**')) return <p key={i} style={{ fontWeight: 700, margin: '4px 0' }}>{line.replace(/\*\*/g, '')}</p>;
+    if (line === '---') return <hr key={i} style={{ border: 'none', borderTop: '1px solid #EEF0F6', margin: '12px 0' }} />;
+    const parts = line.split(/\*\*(.*?)\*\*/g);
+    return <p key={i} style={{ margin: '4px 0' }}>{parts.map((part, j) => j % 2 === 1 ? <strong key={j}>{part}</strong> : part)}</p>;
+  })}
+</div>
               )}
             </div>
 
