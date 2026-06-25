@@ -416,7 +416,29 @@ Overall risk score: ${score}/100 (higher = more likely outside IR35)`;
                 );
               })}
             </div>
-
+{/* Affiliate section */}
+            <div style={{
+              background: COLORS.navy, borderRadius: 16, padding: "24px",
+              marginBottom: 20
+            }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: COLORS.white, marginBottom: 4 }}>
+                🛡️ Protect your IR35 position
+              </div>
+              <div style={{ fontSize: 13, color: COLORS.midGray, marginBottom: 16 }}>
+                If you're outside IR35, specialist insurance protects you if HMRC investigates. Cover from £99/year.
+              </div>
+              <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+                <a href="https://www.goqdos.com/ir35/ir35-insurance" target="_blank" rel="noopener noreferrer" style={{
+                  padding: "12px 20px", borderRadius: 8, background: COLORS.amber,
+                  color: COLORS.navy, fontSize: 13, fontWeight: 700, textDecoration: "none"
+                }}>Get Qdos IR35 Insurance →</a>
+                <a href="https://www.kingsbridge.co.uk/products/legal-ir35-protect-cover/" target="_blank" rel="noopener noreferrer" style={{
+                  padding: "12px 20px", borderRadius: 8, background: "rgba(255,255,255,0.1)",
+                  color: COLORS.white, fontSize: 13, fontWeight: 700, textDecoration: "none",
+                  border: "1px solid rgba(255,255,255,0.2)"
+                }}>Get Kingsbridge Cover →</a>
+              </div>
+            </div>
             <button
               onClick={reset}
               style={{
