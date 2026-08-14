@@ -432,7 +432,7 @@ Overall risk score: ${score}/100 (higher = more likely outside IR35)`;
                   padding: "12px 20px", borderRadius: 8, background: COLORS.amber,
                   color: COLORS.navy, fontSize: 13, fontWeight: 700, textDecoration: "none"
                 }}>Get Qdos IR35 Insurance →</a>
-                <a href=href="https://www.kingsbridge.co.uk/?utm_source=ir35checker&utm_medium=referral&utm_campaign=ir35_assessment"
+                <a href="https://www.kingsbridge.co.uk/?utm_source=ir35checker&utm_medium=referral&utm_campaign=ir35_assessment"
  target="_blank" rel="noopener noreferrer" style={{
                   padding: "12px 20px", borderRadius: 8, background: "rgba(255,255,255,0.1)",
                   color: COLORS.white, fontSize: 13, fontWeight: 700, textDecoration: "none",
