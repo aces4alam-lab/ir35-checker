@@ -178,24 +178,6 @@ Overall risk score: ${score}/100 (higher = more likely outside IR35)`;
   const q = questions[currentQ];
 
   return (
-    <div style={{ minHeight: "100vh", background: COLORS.lightGray, fontFamily: "'Inter', system-ui, sans-serif" }}>
-      {/* Header */}
-      <div style={{ background: COLORS.navy, padding: "0" }}>
-        <div style={{ maxWidth: 720, margin: "0 auto", padding: "20px 24px", display: "flex", alignItems: "center", gap: 12 }}>
-          <div style={{
-            width: 36, height: 36, borderRadius: 8,
-            background: COLORS.amber, display: "flex", alignItems: "center", justifyContent: "center",
-            fontWeight: 800, fontSize: 16, color: COLORS.navy, flexShrink: 0
-          }}>IR</div>
-          <div>
-            <div style={{ color: COLORS.white, fontWeight: 700, fontSize: 16, letterSpacing: "-0.2px" }}>IR35 Status Checker</div>
-            <div style={{ color: COLORS.midGray, fontSize: 12 }}>Free contractor assessment tool</div>
-          </div>
-          <div style={{ marginLeft: "auto", fontSize: 11, color: COLORS.midGray, textAlign: "right" }}>
-            Not legal advice.<br />Consult a tax specialist.
-          </div>
-        </div>
-      </div>
 
       <div style={{ maxWidth: 720, margin: "0 auto", padding: "32px 24px" }}>
 
