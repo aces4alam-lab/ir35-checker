@@ -1,3 +1,4 @@
+import React from "react";
 const COLORS = {
   navy: "#0F1F3D",
   navyMid: "#1A3260",
