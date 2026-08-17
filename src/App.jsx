@@ -179,9 +179,7 @@ Overall risk score: ${score}/100 (higher = more likely outside IR35)`;
 
   return (
 
-      <div style={{ maxWidth: 720, margin: "0 auto", padding: "32px 24px" }}>
-
-        {!submitted ? (
+     {!submitted ? (
           <>
             {/* Risk meter */}
             <div style={{
@@ -433,6 +431,5 @@ Overall risk score: ${score}/100 (higher = more likely outside IR35)`;
           </div>
         )}
       </div>
-    </div>
   );
 }
