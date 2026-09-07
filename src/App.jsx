@@ -178,8 +178,8 @@ Overall risk score: ${score}/100 (higher = more likely outside IR35)`;
   const q = questions[currentQ];
 
   return (
-
-     {!submitted ? (
+  <>
+  {!submitted ? (
           <>
             {/* Risk meter */}
             <div style={{
@@ -430,6 +430,7 @@ Overall risk score: ${score}/100 (higher = more likely outside IR35)`;
             </button>
           </div>
         )}
-      </div>
-  );
+                </div>
+        </>
+        );
 }
